@@ -219,7 +219,7 @@ class Authentication {
             
             list($user_id, $token, $timeout) = explode(':', $data);
             
-            // Cookie should've expired - cheating bastards
+            // Cookie should've expired
             if ($timeout < time())
             {
                 return FALSE;
@@ -238,7 +238,6 @@ class Authentication {
                 return TRUE;
             }
             
-            // You cheat, cookie monster get's cookie
             $this->CI->load->helper('cookie');
             delete_cookie('remember');
         }

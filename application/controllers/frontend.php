@@ -94,9 +94,9 @@ class Frontend extends Controller {
         
         $data = array(
             'group_id'  => 1,
-            'username'  => 'inparo',
-            'email'     => 'inparo@example.com',
-            'password'  => 'emma',
+            'username'  => 'admin',
+            'email'     => 'admin@example.com',
+            'password'  => '123456',
             'join_date' => time()
         );
         
